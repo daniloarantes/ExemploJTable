@@ -210,7 +210,7 @@ public class CadastroAluno extends javax.swing.JFrame {
         // TODO add your handling code here:
         contagem();
     }//GEN-LAST:event_jButton1ActionPerformed
-
+// Exemplo para realizar contagem de valores de jTable
     public void contagem(){
         int c = model.getColumnCount();
         int cont = 0;
