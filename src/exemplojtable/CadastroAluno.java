@@ -20,7 +20,6 @@ public class CadastroAluno extends javax.swing.JFrame {
      */
     public CadastroAluno() {
         initComponents();
-        
         TAlunos.setModel(model);
     }
 
@@ -172,7 +171,7 @@ public class CadastroAluno extends javax.swing.JFrame {
         a.setNome(jTNome.getText());
         a.setEmail(jTEmail.getText());
         a.setRa(Integer.parseInt(jTRa.getText()));
-        
+
         model.addLinha(a);
         jTNome.setText("");
         jTEmail.setText("");
@@ -207,19 +206,19 @@ public class CadastroAluno extends javax.swing.JFrame {
     }//GEN-LAST:event_jBRemoveActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
         contagem();
     }//GEN-LAST:event_jButton1ActionPerformed
 // Exemplo para realizar contagem de valores de jTable
-    public void contagem(){
+
+    public void contagem() {
         int c = model.getColumnCount();
         int cont = 0;
-        for (int i = 0; i <= TAlunos.getRowCount()-1; i++) {
+        for (int i = 0; i <= TAlunos.getRowCount() - 1; i++) {
             cont = cont + Integer.parseInt(TAlunos.getValueAt(i, 2).toString());
         }
-        
         jLabel4.setText(String.valueOf(cont));
     }
+
     /**
      * @param args the command line arguments
      */
