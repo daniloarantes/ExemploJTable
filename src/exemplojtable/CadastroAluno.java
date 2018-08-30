@@ -5,11 +5,9 @@
  */
 package exemplojtable;
 
-import javax.swing.JOptionPane;
-
 /**
  *
- * @author danilo
+ * @author Danilo Arantes
  */
 public class CadastroAluno extends javax.swing.JFrame {
 

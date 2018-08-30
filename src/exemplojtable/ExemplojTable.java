@@ -7,15 +7,11 @@ package exemplojtable;
 
 /**
  *
- * @author danilo
+ * @author Danilo Arantes
  */
 public class ExemplojTable {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
         CadastroAluno cad = new CadastroAluno();
         cad.setVisible(true);
     }

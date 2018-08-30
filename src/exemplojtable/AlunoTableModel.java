@@ -11,7 +11,7 @@ import javax.swing.table.AbstractTableModel;
 
 /**
  *
- * @author danilo
+ * @author Danilo Arantes
  */
 public class AlunoTableModel extends AbstractTableModel {
 
@@ -42,7 +42,6 @@ public class AlunoTableModel extends AbstractTableModel {
                 return alunos.get(linha).getEmail();
             case 2:
                 return alunos.get(linha).getRa();
-
         }
         return null;
     }
@@ -61,15 +60,14 @@ public class AlunoTableModel extends AbstractTableModel {
                 break;
         }
         this.fireTableRowsUpdated(linha, linha);
-
     }
 
     public void addLinha(Aluno a) {
         this.alunos.add(a);
         this.fireTableDataChanged();
     }
-    
-    public void removeLinha(int linha){
+
+    public void removeLinha(int linha) {
         this.alunos.remove(linha);
         this.fireTableDataChanged();
     }

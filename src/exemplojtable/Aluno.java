@@ -7,7 +7,7 @@ package exemplojtable;
 
 /**
  *
- * @author danilo
+ * @author Danilo Arantes
  */
 public class Aluno {
     private String nome;
@@ -37,6 +37,5 @@ public class Aluno {
     public void setRa(int ra) {
         this.ra = ra;
     }
-    
     
 }
